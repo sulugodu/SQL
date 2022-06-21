@@ -4,7 +4,6 @@ import pandas as pd
 from db_utils import data_to_db, data_from_db
 
 
-# mysql: // user1: test123 @ localhost:33060
 def data_frame_csv(file_name: str, data: pd.DataFrame):
     """
     Write results to csv file.
