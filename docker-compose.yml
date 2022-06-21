@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  db:
+    image: mysql:latest
+    container_name: sql_server
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: secure
+      MYSQL_DATABASE: product
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: test123
+    volumes:
+      - my-db:/var/lib/mysql
+    ports:
+     - 33060:3306
+
+volumes:
+  my-db:
