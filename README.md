@@ -20,7 +20,7 @@ required packages as below.
 
 **Setup a pod or isolated container comprising a SQL Database**
 
-Data base type: mysql
+Data base type: mysql \
 An sql server is built as a micro services, using docker containers for hosting the server.\
 Setting up an isolated mysql server and all required environment variables
 are defined in `docker-compose.yml` file. 
