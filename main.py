@@ -104,7 +104,8 @@ def task_run():
         medina_ghz(data_clean)
         print(f'CSV file is generated for task:  Median of column “GHz”,'
               'grouped by column “RAM_GB” :median.csv')
-    except:
+    except Exception as ex:
+        print(ex)
         print('Error in the script')
 
 
